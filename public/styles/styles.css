@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Figment Force;
+    src: url(/fonts/figment-force.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Carme', sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+nav {
+    background-color: beige;
+    flex: 1 2 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: white;
+    flex: 5 3 auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.nav-links {
+    text-align: left;
+}
+
+.nav-links > * {
+    margin: 1em;
+}
+
+h1 {
+    font-family: Figment Force;
+}
+
+p {
+    text-align: justify;
+}
+
+
+.fa-instagram, .fa-shopping-basket {
+    color: brown;
+    font-size: 32px;
+}
