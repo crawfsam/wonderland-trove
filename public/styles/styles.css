@@ -76,27 +76,65 @@ nav a:hover {
     text-decoration: underline;
 }
 
+@media only screen and (max-width: 900px) {
+    body {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: row;
+        height: 70px;
+        width: 80%;
+        align-items: center;
+    }
+
+}
+
+
+@media only screen and (max-width: 556px) {
+    nav ul {
+        flex-direction: column;
+        width: 80%;
+        height: 220px;
+        align-items: center;
+    }
+
+    .hero-page {
+        justify-content: flex-start;
+        padding-top: 1em;
+    }
+}
+
 main {
     background-color: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 100%;
+    height: 100vh;
 }
 
 .hero-page {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.hero-page .hero, .hero-page .hero-image {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
+@media only screen and (max-width: 1472px) {
+    .hero-page {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-page > * {
+        padding: 1em 0em;
+    }
+}
+
+.hero-page > * {
+    margin: 0 2em;
+}
+
 .hero {
-     /* padding: 3em; */
      text-align: center;
      max-width: 60ch;
 }
@@ -115,17 +153,16 @@ main {
     font-size: 24px;
 }
 
-.img { 
-    width: 350px;
-    height: 200px;
-    background-color: blue;
+.slider img { 
+    width: 500px;
+    height: 285px;
 }
 
 .slider {
     margin: 0.5em auto;
     overflow: auto;
-    width: 350px;
-    height: 200px;
+    width: 500px;
+    height: 285px;
 }
 
 .slides {
