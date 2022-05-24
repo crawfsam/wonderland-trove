@@ -12,6 +12,14 @@ app.get('/', (req, res) => {
   res.render('index.ejs');
 });
 
+app.get('/about', (req, res) => {
+  res.render('about.ejs');
+})
+
+app.get('/shop', (req, res) => {
+  res.render('shop.ejs')
+})
+
 app.listen(3000, () => {
   console.log('listening on port 3000');
 });
